@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "react-native-charts-wrapper": {
-      "signature": "8cf1c067d08c9b6a25fc96be851c69c0",
-      "file": true
-    }
-  }
-}

@@ -13,7 +13,7 @@
     "immutability-helper": "^3.0.1",
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-charts-wrapper": "file:.yalc/react-native-charts-wrapper"
+    "react-native-charts-wrapper": "git+https://github.com/angelos3lex/react-native-charts-wrapper.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
