@@ -7,24 +7,9 @@ import update from 'immutability-helper';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    this.values = [
-      {x: 0, y: 3},
-      {x: 1, y: 6},
-      {x: 2, y: 9},
-      {x: 3, y: 12},
-    ];
-    this.values2 = [
-      {x: 0, y: 3},
-      {x: 1, y: 6},
-      {x: 2, y: 9},
-      {x: 3, y: 12},
-    ];
-    this.values3 = [
-      {x: 0, y: 3},
-      {x: 1, y: 6},
-      {x: 2, y: 9},
-      {x: 3, y: 12},
-    ];
+    this.values = [{x: 0, y: 3}, {x: 1, y: 6}, {x: 2, y: 9}, {x: 3, y: 12}];
+    this.values2 = [{x: 0, y: 3}, {x: 1, y: 6}, {x: 2, y: 9}, {x: 3, y: 12}];
+    this.values3 = [{x: 0, y: 3}, {x: 1, y: 6}, {x: 2, y: 9}, {x: 3, y: 12}];
   }
 
   componentDidMount() {
@@ -33,17 +18,11 @@ export default class App extends React.Component {
       let newX = this.values.length;
 
       let vals = update(this.values, {
-        $push: [
-          {x: newX, y: newVal},
-          {x: newX + 1, y: newVal + 5},
-        ],
+        $push: [{x: newX, y: newVal}, {x: newX + 1, y: newVal + 5}],
       });
 
       let vals2 = update(this.values2, {
-        $push: [
-          {x: newX, y: newVal * 2},
-          {x: newX + 1, y: (newVal + 5) * 2},
-        ],
+        $push: [{x: newX, y: newVal * 2}, {x: newX + 1, y: (newVal + 5) * 2}],
       });
 
       let vals3 = update(this.values3, {
@@ -60,10 +39,7 @@ export default class App extends React.Component {
       this.chartRef.addEntries([
         {
           index: 0,
-          values: [
-            {x: newX, y: newVal},
-            {x: newX + 1, y: newVal + 5},
-          ],
+          values: [{x: newX, y: newVal}, {x: newX + 1, y: newVal + 5}],
         },
         {
           index: 1,
@@ -83,7 +59,7 @@ export default class App extends React.Component {
       this.values = vals;
       this.values2 = vals2;
       this.values3 = vals3;
-    }, 17);
+    }, 20);
   }
 
   filter(val) {
